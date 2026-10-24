@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Screenly: a responsive streaming-service landing page built with HTML and CSS. A front-end practice project with a fictional brand."
+    />
+    <title>Screenly | Landing page demo</title>
+    <link rel="preload" href="images/hero.webp" as="image" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#ff7386" />
+          <stop offset="1" stop-color="#c11119" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Screenly home"
+        ><span class="brand-mark">S</span
+        ><span class="brand-name">SCREENLY</span></a
+      >
+      <a class="btn-signin" href="#">Sign In</a>
+    </header>
+    <nav class="pill-nav" aria-label="Page sections">
+      <a href="#popular">Popular now</a>
+      <a href="#plans">Plans</a>
+      <a href="#reasons">Reasons to join</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-card">
+          <div class="hero-text">
+            <h1 id="hero-title">Unlimited films, TV programmes and more</h1>
+            <p>Starts at £4.99. Cancel at any time.</p>
+          </div>
+        </div>
+
+        <form class="email-form" id="email-form" novalidate>
+          <p class="membership">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <div class="email-row">
+            <label class="sr-only" for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email address"
+              autocomplete="email"
+              required
+            />
+            <button type="submit" class="btn-start">
+              Get Started
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              >
+                <path
+                  d="m9 5 7 7-7 7"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <p
+            class="form-note"
+            id="form-note"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+
+        <a class="promo" href="#plans">
+          <span>
+            <strong>The Screenly you love for just EUR 5.99.</strong>
+            <small>Enjoy savings and great shows with a few ad breaks.</small>
+          </span>
+          <span class="promo-btn">Learn More</span>
+        </a>
+      </section>
+
+      <section class="rail" id="popular" aria-labelledby="trend-title">
+        <h2 id="trend-title">Trending Now</h2>
+        <ul class="movies">
+          <li class="movie">
+            <img
+              src="images/poster-01.webp"
+              alt="Placeholder poster: Midnight Harbor"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-02.webp"
+              alt="Placeholder poster: Neon Orchard"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-03.webp"
+              alt="Placeholder poster: The Last Lighthouse"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-04.webp"
+              alt="Placeholder poster: Paper Moons"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-05.webp"
+              alt="Placeholder poster: Iron Valley"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-06.webp"
+              alt="Placeholder poster: Glass Garden"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-07.webp"
+              alt="Placeholder poster: Echo Run"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-08.webp"
+              alt="Placeholder poster: Wild Signal"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+        <h2 class="rail-2">Only on Screenly</h2>
+        <ul class="movies">
+          <li class="movie">
+            <img
+              src="images/poster-09.webp"
+              alt="Placeholder poster: Northern Lights"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-10.webp"
+              alt="Placeholder poster: Quiet Engine"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-11.webp"
+              alt="Placeholder poster: Blue Meridian"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-12.webp"
+              alt="Placeholder poster: Salt &amp; Smoke"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-13.webp"
+              alt="Placeholder poster: Copper Sky"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-14.webp"
+              alt="Placeholder poster: Moss &amp; Mirrors"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-15.webp"
+              alt="Placeholder poster: Velvet Static"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+          <li class="movie">
+            <img
+              src="images/poster-16.webp"
+              alt="Placeholder poster: Harbor Lights"
+              width="184"
+              height="257"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="plans" aria-labelledby="plans-title">
+        <h2 id="plans-title">A Plan To Suit Your Needs</h2>
+        <div class="plans">
+          <article class="plan plan-1">
+            <div class="plan-body">
+              <h3>Basic with ads</h3>
+              <p class="plan-res">1080p</p>
+              <ul class="plan-feats">
+                <li>
+                  <svg
+                    class="check"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 6 9 17l-5-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  >Good video quality
+                </li>
+                <li>
+                  <svg
+                    class="check"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 6 9 17l-5-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  >A few short ad breaks
+                </li>
+              </ul>
+            </div>
+            <p class="plan-price">EUR 5.99 /mo</p>
+          </article>
+          <article class="plan plan-2">
+            <div class="plan-body">
+              <h3>Standard</h3>
+              <p class="plan-res">1080p</p>
+              <ul class="plan-feats">
+                <li>
+                  <svg
+                    class="check"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 6 9 17l-5-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  >Good video quality
+                </li>
+                <li>
+                  <svg
+                    class="check"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 6 9 17l-5-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  >No ads
+                </li>
+              </ul>
+            </div>
+            <p class="plan-price">EUR 13.49 /mo</p>
+          </article>
+          <article class="plan plan-3">
+            <div class="plan-body">
+              <h3>Premium</h3>
+              <p class="plan-res">4K + HDR</p>
+              <ul class="plan-feats">
+                <li>
+                  <svg
+                    class="check"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 6 9 17l-5-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  >Best video quality
+                </li>
+                <li>
+                  <svg
+                    class="check"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 6 9 17l-5-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  >Immersive sound
+                </li>
+                <li>
+                  <svg
+                    class="check"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 6 9 17l-5-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    /></svg
+                  >No ads
+                </li>
+              </ul>
+            </div>
+            <p class="plan-price">EUR 19.99 /mo</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="reasons" aria-labelledby="reasons-title">
+        <h2 id="reasons-title">More Reasons to Join</h2>
+        <ul class="reasons">
+          <li class="reason">
+            <h3>Stories tailored to your taste</h3>
+            <span class="reason-icon"
+              ><svg viewBox="0 0 48 48" aria-hidden="true">
+                <path
+                  d="M24 6l4.6 11.4L40 22l-11.4 4.6L24 38l-4.6-11.4L8 22l11.4-4.6z"
+                  fill="url(#g1)"
+                /></svg
+            ></span>
+          </li>
+          <li class="reason">
+            <h3>Cancel or switch plans anytime</h3>
+            <span class="reason-icon"
+              ><svg viewBox="0 0 48 48" aria-hidden="true">
+                <path
+                  d="M10 18h24l-6-6M38 30H14l6 6"
+                  fill="none"
+                  stroke="url(#g1)"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></span>
+          </li>
+          <li class="reason">
+            <h3>A place just for kids</h3>
+            <span class="reason-icon"
+              ><svg viewBox="0 0 48 48" aria-hidden="true">
+                <path
+                  d="M24 40S7 30 7 18a9 9 0 0117-4 9 9 0 0117 4c0 12-17 22-17 22z"
+                  fill="url(#g1)"
+                /></svg
+            ></span>
+          </li>
+          <li class="reason">
+            <h3>For your phone, tablet, laptop and TV</h3>
+            <span class="reason-icon"
+              ><svg viewBox="0 0 48 48" aria-hidden="true">
+                <rect
+                  x="5"
+                  y="9"
+                  width="30"
+                  height="21"
+                  rx="3"
+                  fill="none"
+                  stroke="url(#g1)"
+                  stroke-width="4"
+                />
+                <rect
+                  x="30"
+                  y="18"
+                  width="13"
+                  height="22"
+                  rx="3"
+                  fill="url(#g1)"
+                />
+                <path
+                  d="M14 38h12"
+                  stroke="url(#g1)"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                /></svg
+            ></span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+        <div class="faq">
+          <details class="faq-item">
+            <summary>
+              What is Screenly?<span class="plus" aria-hidden="true"></span>
+            </summary>
+            <p>
+              Screenly is a fictional streaming service used as a front-end
+              practice project. It has no real catalogue and no accounts.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              How much does Screenly cost?<span
+                class="plus"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>
+              Plans start at EUR 5.99 a month and go up to EUR 19.99 a month.
+              These prices are made up for the demo.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              What can I watch?<span class="plus" aria-hidden="true"></span>
+            </summary>
+            <p>
+              The posters on this page are generated placeholders with invented
+              titles.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              How do I cancel?<span class="plus" aria-hidden="true"></span>
+            </summary>
+            <p>
+              There is nothing to cancel: the sign-up form is a demo and does
+              not send or store any data.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              Which devices are supported?<span
+                class="plus"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>
+              The page itself works in any modern browser on phones, tablets and
+              computers.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              Is Screenly good for kids?<span
+                class="plus"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>
+              This is a demo page, so there are no kids profiles. It is just
+              HTML, CSS and a little JavaScript.
+            </p>
+          </details>
+        </div>
+        <div class="cta-end">
+          <p>Create or restart your membership</p>
+          <a class="btn-start btn-small" href="#top">Get Started</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <a class="contact" href="#">Questions? Contact us.</a>
+        <nav class="footer-links" aria-label="Footer">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Buy Gift Cards</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="#">Legal Notices</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Ways to Watch</a></li>
+            <li><a href="#">Corporate Information</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Speed Test</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Redeem Gift Cards</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Ad Choices</a></li>
+          </ul>
+        </nav>
+        <label class="sr-only" for="lang">Language</label>
+        <select id="lang" class="lang">
+          <option>English</option>
+          <option>Français</option>
+        </select>
+        <p class="legal">
+          Screenly is a fictional brand made for a front-end practice project.
+          It is not affiliated with any streaming service. Posters are generated
+          placeholders. No data is collected.
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
